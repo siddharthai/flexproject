@@ -1,0 +1,239 @@
+.wrapper{
+  position: relative;
+}
+
+
+#blink:hover {
+
+    text-align: center;
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: red;
+    }
+
+    @-moz-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {  
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+
+
+#country-group1 {
+  float:right;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+    
+}
+
+#circle{
+  
+	width:500px;
+	height: 500px;
+    border-radius:100%;
+    box-shadow: 2px 2px 10px red;
+    position: relative;
+    margin: 150px auto;
+    box-shadow: 0 0 60px red;
+    background: #F4C2DB; /* For browsers that do not support gradients */    
+    background: -webkit-radial-gradient(center, white,#F4C2DB); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(center,  white,#F4C2DB); /* For Opera 11.1 to 12.0 */
+    background: -moz-radial-gradient(center, white,#F4C2DB); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(to center, white,#F4C2DB); /* Standard syntax (must be last) */
+    
+}
+
+#country-group2{
+  float:left;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: 200pt;
+}
+p{
+    text-align: center;
+    color:white;
+    
+}
+#paris .text{
+    visibility: hidden;
+}
+#paris:hover .text{
+    visibility: visible;
+    display: block;
+    color: white;
+    text-align: center;
+    text-shadow:  0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    font-family:inherit;
+    font-size: 20px
+}
+
+#rome .text{
+    visibility: hidden;
+}
+#rome:hover .text{
+    visibility: visible;
+    display: block;
+    color: white;
+    text-align: center;
+    text-shadow:  0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+    font-family:inherit;
+    font-size: 20px;
+}
+
+#london .text{
+    visibility: hidden;
+}
+#london:hover .text{
+    visibility: visible;
+    display: block;
+    color: white;
+    text-align: center;
+    text-shadow:  0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+     font-family:inherit;
+     font-size: 20px;
+}
+#vienna .text{
+    visibility: hidden;
+}
+#vienna:hover .text{
+    visibility: visible;
+    display: block;
+    color: white;
+    text-align: center;
+    text-shadow:  0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+     font-family:inherit;
+     font-size: 20px;
+}
+#paris{
+    width:200px; 
+    height:180px;
+    border: 2px solid #a1a1a1;
+    border-radius: 1em;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpjjQUcN41evM51MM_ak7HpAPSmoO19T6QZhaOHktvNhu28QOkAQ);
+    transition: width 5s, height 5s,transform 5s;
+    transition: width 5s, height 5s, transform 5s;
+    position: relative;
+    -ms-transform: rotate(35deg); /* IE 9 */
+    -webkit-transform: rotate(35deg); /* Safari */
+    transform: rotate(-35deg); /* Standard syntax */
+    
+    
+    
+}
+#paris:hover{
+  
+    border-radius: 100%;
+    border-color: orange;
+    shape-inside: circle(50%, 50%, 50%);
+    clip-path: circle(50%, 50%, 50%);/* new syntax for webkit */
+    shape-inside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: rotate(90deg) scale(1) translateY(-250%) translateX(40%);
+    z-index: 3;  
+    
+}
+
+
+
+#rome{
+    width:200px; 
+    height:180px;
+    border: 2px solid #a1a1a1;
+    border-radius: 1em;
+    background-image: url(https://cache-graphicslib.viator.com/graphicslib/thumbs674x446/3731/SITours/skip-the-line-ancient-rome-and-colosseum-half-day-walking-tour-in-rome-114992.jpg);
+    transition: width 5s, height 5s,transform 5s;
+    transition: width 5s, height 5s, transform 5s;
+    position: relative;
+    -ms-transform: rotate(35deg); /* IE 9 */
+    -webkit-transform: rotate(35deg); /* Safari */
+    transform: rotate(-35deg); /* Standard syntax */
+}
+#rome:hover{
+    border-radius: 100%;
+    border-color: orange;
+    shape-inside: circle(50%, 50%, 50%);
+    clip-path: circle(50%, 50%, 50%);/* new syntax for webkit */
+    shape-inside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: rotate(65deg) scale(1) translateY(-250%) translateX(40%);
+    z-index: 3;  
+}
+
+
+
+#london{
+    width:200px; 
+    height:180px;
+    border: 2px solid #a1a1a1;
+    border-radius: 1em;
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRonKqx6s21rTxc7k4EHw3goM2s3jvj3ZPc989GiakUFfqULVHhfg);
+    transition: width 5s, height 5s,transform 5s;
+    transition: width 5s, height 5s, transform 5s;
+    position: relative;
+    -ms-transform: rotate(35deg); /* IE 9 */
+    -webkit-transform: rotate(35deg); /* Safari */
+    transform: rotate(35deg); /* Standard syntax */
+}
+#london:hover{
+     border-radius: 100%;
+     border-color: orange;
+     shape-inside: circle(50%, 50%, 50%);
+     clip-path: circle(50%, 50%, 50%);/* new syntax for webkit */
+     shape-inside: circle(50% at 50% 50%);
+     clip-path: circle(50% at 50% 50%);
+     transform: rotate(75deg) scale(1) translateY(250%) translateX(-15%);
+     z-index: 3;  
+}
+
+
+
+#vienna{
+    width:200px; 
+    height:180px;
+    border: 2px solid #a1a1a1;
+    border-radius: 1em;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh-BgYVjWIavXGAMg1b_ewyM5gcKgq9LfBTHMHBGKHq32Ss3p6ow);
+    transition: width 5s, height 5s,transform 5s;
+    transition: width 5s, height 5s, transform 5s;
+    position: relative;
+    -ms-transform: rotate(35deg); /* IE 9 */
+    -webkit-transform: rotate(35deg); /* Safari */
+    transform: rotate(35deg); /* Standard syntax */
+}
+#vienna:hover{
+    border-radius: 100%;
+    border-color: orange;
+    shape-inside: circle(50%, 50%, 50%);
+    clip-path: circle(50%, 50%, 50%);/* new syntax for webkit */
+    shape-inside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: rotate(115deg) scale(1) translateY(250%) translateX(40%);
+    z-index: 3;  
+}
